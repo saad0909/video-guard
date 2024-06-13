@@ -2,6 +2,8 @@
 
 Welcome to the Video Player Application! This application allows you to upload and play videos with the option to apply filters for profanity, violence, and explicit content. Follow the steps below to get started.
 
+![light theme](images/light.jpg)
+
 ## Table of Contents
 1. [Implementation](#implementation)
    - [Dataset Collection](#dataset-collection)
@@ -51,8 +53,6 @@ We tested our trained RNN model on the remaining 20% of the data that was set as
 
 
 # Using the Tool
-
-![light theme](images/light.jpg)
 
 ## 1. Selecting a Video File
 
