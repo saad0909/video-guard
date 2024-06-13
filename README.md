@@ -3,7 +3,15 @@
 Welcome to the Video Player Application! This application allows you to upload and play videos with the option to apply filters for profanity, violence, and explicit content. Follow the steps below to get started.
 
 ## Table of Contents
-1. [Using the Tool](#using-the-tool)
+1. [Implementation](#implementation)
+   - [Dataset Collection](#dataset-collection)
+   - [Feature Extraction](#feature-extraction)
+   - [Pre-trained Models](#pre-trained-models)
+   - [Model Architecture](#model-architecture)
+   - [Training](#training)
+   - [Testing](#testing)
+     
+2. [Using the Tool](#using-the-tool)
    - [Selecting a Video File](#selecting-a-video-file)
    - [Processing](#processing)
    - [Applying Filters](#applying-filters)
@@ -11,13 +19,7 @@ Welcome to the Video Player Application! This application allows you to upload a
    - [Uploading a Folder](#uploading-a-folder)
    - [Removing a Video](#removing-a-video)
    - [Changing the Theme](#changing-the-theme)
-2. [Implementation](#implementation)
-   - [Dataset Collection](#dataset-collection)
-   - [Feature Extraction](#feature-extraction)
-   - [Pre-trained Models](#pre-trained-models)
-   - [Model Architecture](#model-architecture)
-   - [Training](#training)
-   - [Testing](#testing)
+
 
 # Implementation
 
