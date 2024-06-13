@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="styles/style1.css">
+        <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/all.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">      
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js">
+        </script>
+    </head>
+    <body class="dakbdy">
+        <div id="aleart">
+            <svg id="aleartsvg" viewBox="0 0 24 24" width="15px" height="15px" fill="red"><path d="M11.983 0a12.206 12.206 0 00-8.51 3.653A11.8 11.8 0 000 12.207 11.779 11.779 0 0011.8 24h.214A12.111 12.111 0 0024 11.791 11.766 11.766 0 0011.983 0zM10.5 16.542a1.476 1.476 0 011.449-1.53h.027a1.527 1.527 0 011.523 1.47 1.475 1.475 0 01-1.449 1.53h-.027a1.529 1.529 0 01-1.523-1.47zM11 12.5v-6a1 1 0 012 0v6a1 1 0 11-2 0z"></path></svg>
+            <p id="aleartmessage">Enable censored watching first</p>
+        </div>
+        <div id="exportt">
+            <select id="video_filter_typez">
+                <option value="Filter type" selected disabled hidden>Violence Filter</option>
+                <option value="blur">Blur</option>
+                <option value="shutter">Shutter</option>
+                <option value="skip">Skip scene</option>
+            </select>
+            <select id="audio_filter_typez">
+                <option value="Filter type" selected disabled hidden>Audio Filter</option>
+                <option value="beep" hidden>Beep audio</option>
+                <option value="remove">Remove audio</option>
+            </select>
+            <div id="btnse">
+            <button id="save_video">Export</button>
+            <button id="cancel_video">Cancel</button>
+            </div>
+        </div>
+        <div id="theme">
+            <input type="checkbox" class="checkbox" id="checkbox">
+            <label for="checkbox" class="checkbox-label" id="theme_slider">
+                <i class="fas fa-moon"></i>
+                <i class="fas fa-sun"></i>
+                <span class="ball"></span>
+            </label>  
+        </div>
+        <div id="cont1">
+        <div id="topbar">
+            <img src="images/icon.svg" alt="icon" id="icon">
+            <div></div>
+            <button id="minimize"><i class="fa-light fa-window-minimize" ></i></button>
+            <button id="maximize"><i class="fa-light fa-square" ></i></button>
+            <button id="close"><i class="fa-light fa-xmark"></i></button>
+        </div>
+        <div id="bdy">
+            <div id="videocont">
+                <div id="infocont">
+                    <div></div>
+                    <div id="scont">
+                    <div></div>
+                    <div style="background-color: rgba(255,0,0,0)">     
+                    </div>
+                    <div> </div>
+                    <div id="sind"></div>
+                    <div id="stxt">Safe to Watch</div>
+                    <div id="exbtn">Export</div>
+                    </div>
+                    <div></div>
+                </div>
+                <div id="videoplayer">
+                    <div></div>
+                    <div id="shutter"> </div>
+                    <div id="vplayer">
+                        <video id="videoscr" controls>
+                            <source src="" type="video/mp4">
+                          </video>
+                    </div>
+                </div>
+                <div id="controlls">
+                    <div id="censor">
+                        <div id="censor_toggles">
+                            <div id="loadbar">
+                                <div class="spinner-square">
+                                    <div class="square-1 square"></div>
+                                    <div class="square-2 square"></div>
+                                    <div class="square-3 square"></div>
+                                </div>
+                            </div>
+                            <div id="violence">
+                                <label class="violence_switch">
+                                    <input type="checkbox" id="vcheckbox">
+                                    <span id="slide" class="slider round"></span>
+                                  </label>
+                                  <div id="toggles_text">Violence</div>
+                            </div>
+                            <div id="foul_language">
+                                <label class="violence_switch">
+                                    <input type="checkbox" id="pcheckbox">
+                                    <span class="slider round"></span>
+                                  </label>
+                                  <div id="toggles_text2">Profanity</div>
+                            </div>
+                            <div id="nudity">
+                                <label class="violence_switch" >
+                                    <input type="checkbox" id="echeckbox">
+                                    <span class="slider round"></span>
+                                  </label>
+                                  <div id="toggles_text3">Explicit</div>
+                            </div>
+                        </div>
+                        <div id="censor_levels">
+                            <div id="censor_level_container">
+                            <div id="video_filter">
+                                <select id="videoCensorType">
+                                    <option value="Filter type" selected disabled hidden>Video filter type</option>
+                                    <option value="model" disbaled hidden>detecting violence</option>
+                                    <option value="detected" disabled hidden>violence detected</option>
+                                    <option value="notdetected" disabled hidden>no violence detected</option>
+                                    <option value="blur">Blur</option>
+                                    <option value="pixelate">Shutter</option>
+                                    <option value="remove">Skip scene</option>
+                                </select>
+                            </div>
+                            <div id="audio_filter">
+                                <select id="audioCensorType">
+                                    <option value="Filter type" selected disabled hidden>Audio filter type</option>
+                                    <option value="model" disbaled hidden>detecting profanity</option>
+                                    <option value="detected" disabled hidden>profanity detected</option>
+                                    <option value="notdetected" disabled hidden>no foul langugae</option>
+                                    <option value="beep">Beep audio</option>
+                                    <option value="remove">Remove audio</option>
+                                </select>
+                            </div>
+                            <div id="violence_filter">
+                                <select id="violenceCensorType">
+                                    <option value="Filter type" selected disabled hidden>Violence level</option>
+                                    <option value="model" disbaled hidden>detecting explicit</option>
+                                    <option value="detected" disabled hidden>explicit detected</option>
+                                    <option value="notdetected" disabled hidden>no nudity detected</option>
+                                    <option value="gunshot">Gunshot</option>
+                                    <option value="stabbing">Stabbing</option>
+                                    <option value="strangling">Strangling</option>
+                                    <option value="allabove">All of the above</option>
+                                </select>
+                            </div>
+                            <div></div>
+                            <!-- <div id="censor_btn">
+                                <div id="censor_btn_text">Censor</div>
+                            </div> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div id="manual">
+                        <div id="manual_container">
+                            <div id="inp1">
+                            <div id="starttext">Set start time</div>
+                            <!-- <input type="text" id="starttime" name="numericInput" oninput="validateNumericInput(this)"> -->
+                            <div id="starttime"></div>
+                            </div>
+                            <div id="inp2">
+                            <div id="endtext">Set end time</div>
+                            <!-- <input type="text" id="endtime" name="numericInput" oninput="validateNumericInput(this)"> -->
+                            <div id="endtime"></div>
+                            </div>
+                            <div id="filter">
+                            <select id="censorType">
+                                <option value="Filter type" selected disabled hidden>Filter type</option>
+                                <option value="blur">Blur</option>
+                                <option value="pixelate">Shutter</option>
+                                <option value="remove">Skip scene</option>
+                                <option value="beep">Beep audio</option>
+                                <option value="mute">Remove audio</option>
+                            </select>
+                            </div>
+                            <div id="manual_censor">
+                                <div id="manual_censor_text">Censor Frames</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="upld">
+                        <div></div>
+                        <div id="upldv">Upload Video</div>
+                        <div id="remvid">Remove Video</div>
+                        <div id="enabcen">Uncensored</div>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+            <div id="dragcont">
+                <div id="draginnercont">
+                    <div id="videosearch">
+                        <input type="text" id="searchbox" placeholder="Search Video">
+                    </div>
+                    <div id="videos"> </div>
+                    <div id="videoinfo">
+                        <div id="line">
+                            <div id="line1"></div>
+                        </div>
+                        <div id="qtext"></div>
+                        <div id="vfolder">
+                            <div id="vfolderbtn">Upload video folder</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>  
+        </div>
+        <input style="display:none" type="file" id="videoFile" accept="video/*">
+        <audio id="beepSound" src="beep.wav" preload="auto" style="display: none;"></audio>
+        <script src="script.js"></script>
+        <script>
+            function validateNumericInput(input) {
+                input.value = input.value.replace(/[^0-9.]/g, '');
+            }
+        </script>
+    </body>
+</html>
