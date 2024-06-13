@@ -53,6 +53,7 @@ We tested our trained RNN model on the remaining 20% of the data that was set as
 # Using the Tool
 
 ![light theme](images/HEIF Image.jpeg)
+---
 ## 1. Selecting a Video File
 
 To upload a video file:
