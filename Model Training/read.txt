@@ -1,1 +1,1 @@
-this folder contains the file for model training
+this folder contains the code file for model training and model.h5 file.
