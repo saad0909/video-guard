@@ -1,4 +1,4 @@
-# video-guard
+# VideoGuard
 
 Welcome to the Video Player Application! This application allows you to upload and play videos with the option to apply filters for profanity, violence, and explicit content. Follow the steps below to get started.
 
