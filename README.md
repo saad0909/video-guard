@@ -27,7 +27,7 @@ Welcome to the Video Player Application! This application allows you to upload a
 
 ## 7.1 Dataset Collection
 
-We collected around 3000 video clips [Dataset]([https://github.com](https://drive.google.com/file/d/11LAefb92TNSzskryGtVPRsZ0zLxO0Aj1/view?usp=drive_link)) containing various actions, including gunshots, stabbing, and strangling. Then, we extracted the features from the videos using ResNet50, a large CNN model trained on the ImageNet dataset.
+We collected around 3000 video clips [Dataset](https://drive.google.com/file/d/11LAefb92TNSzskryGtVPRsZ0zLxO0Aj1/view?usp=drive_link) containing various actions, including gunshots, stabbing, and strangling. Then, we extracted the features from the videos using ResNet50, a large CNN model trained on the ImageNet dataset.
 
 ## 7.2 Feature Extraction
 
