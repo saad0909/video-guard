@@ -40,7 +40,7 @@ for chunk in timestamps:
     print("Toxicity Score:", toxicity_score)
     if toxicity_score > 0.5:
         print(chunk['segment'])
-        toxic_segments.append((math.floor(chunk['start_time']), math.ceil(chunk['end_time']+0.6)))
+        toxic_segments.append((math.floor(chunk['start_time']), math.ceil(chunk['end_time']+0.55)))
         #print(chunk['start_time'], chunk['end_time']+0.6)
 
 
