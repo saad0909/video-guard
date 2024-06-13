@@ -38,9 +38,3 @@ def estimate_timestamps(transcribed_text, audio_duration):
 
     print(timestamps)
     return timestamps
-"""
-if __name__ == "__main__":
-    audio_file = 'D:\open_ai_whisper\extracted_audio.wav'
-    text = transcribe_audio(audio_file)
-    print(text)
-"""
