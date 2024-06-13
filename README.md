@@ -100,6 +100,7 @@ We trained the model on 80% of our 3000-video dataset, as mentioned earlier. To 
 
 We tested our trained RNN model on the remaining 20% of the data that was set aside during the training process. The obtained accuracy is 81%, but it’s important to note that this value may change as we continue to train the model with additional videos on a daily basis.
 
+![confusion matrix](images/2ce313b6-b791-480c-8087-9603d5ecb3f2.png)
 ---
 
 Thank you for using the Video Player Application! If you encounter any issues or have any questions, please refer to the help section or contact support.
