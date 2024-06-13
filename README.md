@@ -48,12 +48,12 @@ We trained the model on 80% of our 3000-video dataset, as mentioned earlier. To 
 We tested our trained RNN model on the remaining 20% of the data that was set aside during the training process. The obtained accuracy is 90%, but it’s important to note that this value may change as we continue to train the model with additional videos on a daily basis.
 
 ![confusion matrix](images/2ce313b6-b791-480c-8087-9603d5ecb3f2.png)
----
+
 
 # Using the Tool
 
-![light theme](images/light.jpeg)
----
+![light theme](images/light.jpg)
+
 ## 1. Selecting a Video File
 
 To upload a video file:
@@ -106,6 +106,8 @@ To remove a loaded video from the player:
 To switch between light and dark themes:
 
 1. Toggle the **theme** button located in the top left corner of the application.
+
+![dark theme](images/dark.jpg)
    
 
 Thank you for using the Video Player Application! If you encounter any issues or have any questions, please refer to the help section or contact support.
